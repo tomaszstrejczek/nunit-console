@@ -389,7 +389,7 @@ namespace NUnit.Engine.Runners
             result.Xml.AddAttribute("clr-version", Environment.Version.ToString());
 #else
             result.Xml.AddAttribute("engine-version", typeof(MasterTestRunner).GetTypeInfo().Assembly.GetName().Version.ToString());
-            result.Xml.AddAttribute("clr-version", Microsoft.DotNet.InternalAbstractions.RuntimeEnvironment.GetRuntimeIdentifier());
+            result.Xml.AddAttribute("clr-version", Microsoft.DotNet.PlatformAbstractions.RuntimeEnvironment.GetRuntimeIdentifier());
 #endif
 
             double duration = (double)(Stopwatch.GetTimestamp() - startTicks) / Stopwatch.Frequency;

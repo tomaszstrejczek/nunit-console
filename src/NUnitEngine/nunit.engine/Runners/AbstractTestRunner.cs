@@ -24,6 +24,7 @@
 using System;
 using System.ComponentModel;
 using NUnit.Engine.Services;
+using NUnit.Engine;
 
 namespace NUnit.Engine.Runners
 {
